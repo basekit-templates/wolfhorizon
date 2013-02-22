@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<header>
+{{widget('companyheader', 'companyheader', {"logo": profile.logo != '' ? profile.logo : asset('wolfhorizon/images/wolfhorizon-logo.png'), "defaultlogo": asset('wolfhorizon/images/wolfhorizon-logo.png')})|raw}}
+{{widget('navigation', 'navigationheader', {"align":"center", "pages":pages})|raw}}
+</header>
+
+{{zone('main')|raw}}
+
+<footer>
+{{widget('companyaddress', 'companyaddressfooter', {"bkprofileaddress":profile.address, 
+"bkprofileaddress1":profile.address1, "bkprofileaddress2":profile.address2, 
+"bkprofilepostalcode":profile.postalcode, "bkprofilecountry":profile.country})|raw}}
+</footer>
+
+{% endblock %}

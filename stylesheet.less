@@ -1,0 +1,670 @@
+/* Theme CSS */
+
+body 
+{
+    background-color: @color-swatch1;
+    padding: 0;
+    margin: 0;
+}
+
+img
+{
+    margin:0 auto;
+}
+
+h1
+{
+    font-family:@font-swatch1-font-family;
+    font-size:@font-swatch1-font-size;
+    font-weight:@font-swatch1-font-weight;
+    line-height:@font-swatch1-line-height;
+    color:@color-swatch4;
+    letter-spacing: @font-swatch1-letter-spacing;
+}
+
+h2
+{
+    font-family:@font-swatch2-font-family;
+    font-size:@font-swatch2-font-size;
+    font-weight:@font-swatch2-font-weight;
+    line-height:@font-swatch2-line-height;
+    color:@font-swatch2-color;
+    letter-spacing: @font-swatch2-letter-spacing;
+}
+
+h3
+{
+    font-family:@font-swatch3-font-family;
+    font-size:@font-swatch3-font-size;
+    font-weight:@font-swatch3-font-weight;
+    line-height:@font-swatch3-line-height;
+    color:@font-swatch3-color;
+    letter-spacing: @font-swatch3-letter-spacing;
+}
+
+h4
+{
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@font-swatch4-color;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+p, ol, ul
+{
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight:@font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color:@font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+header,section,footer 
+{
+}
+
+header {
+    background-color: @color-swatch1;
+}
+
+header .companyheader {
+    padding:20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 1px 0px #fff;
+}
+
+footer 
+{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: @color-swatch2;
+}
+
+footer p {
+     color: lighten(@color-swatch4,20%);
+}
+
+.widget 
+{
+    margin: 0;
+}
+
+
+
+
+/* Divider CSS */
+
+hr.line {
+   background-color: @color-swatch3;
+   height: 3px;
+   width: 90%;
+   margin: 20px auto;
+   border: none;
+}
+
+hr.line.align-left {
+   margin: 20px auto 20px 0px;
+}
+
+hr.line.align-center {
+   margin: 20px auto;
+}
+
+hr.line.align-right {
+   margin: 20px 0px 20px auto;
+}
+
+
+/* Click To Call CSS */
+
+.widget.clicktocall {
+    background-color: @font-swatch7-background-color;
+    padding: 16px 10px;
+    margin: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.clicktocall:hover {
+    background-color: darken(@color-swatch3,5%);
+    cursor: pointer;
+}
+
+.widget.clicktocall a {
+    font-family:@font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.widget.clicktocall a.justifyleft
+{
+    text-align: left;
+}
+
+.widget.clicktocall a.justifycenter
+{
+    text-align: center;
+}
+
+.widget.clicktocall a.justifyright
+{
+    text-align: right;
+}
+
+.widget.clicktocall a.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.clicktocall a.italic {
+    font-style: italic;
+}
+
+.widget.clicktocall a.bold {
+    font-weight: bold;
+}
+
+
+/* Button CSS */
+/* 
+    Document   : button
+    Created on : 04-Jul-2012, 14:15:32
+    Author     : Dom
+    Description: Button Wishful
+*/
+
+
+.widget.button button.btn {
+    width: 87.5%;
+    margin: 20px auto;
+    display: block;
+}
+
+.btnText {
+}
+
+.widget.button button
+{
+    font-family:@font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    color: @font-swatch7-color;
+    background-color: @font-swatch7-background-color;
+    padding: 16px 10px;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.widget.button button:hover 
+{
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+.widget.button button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.button button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.button button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.button button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.button button.btn.italic {
+    font-style: italic;
+}
+
+.widget.button button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.button span {
+    vertical-align: center;
+}
+
+.widget.button i {
+    margin-right: 5px;
+}
+
+
+/* Content CSS */
+/* 
+    Document   : image
+    Created on : 04-Jul-2012, 14:15:32
+    Author     : Dom
+    Description: Image Approcom
+*/
+
+
+.widget.content
+{
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.widget.content span.expand
+{
+    font-family: @font-swatch3-font-family;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    font-size: @font-swatch5-font-size;
+    padding: 4px 8px;
+    margin: 4px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.widget.content span.expand:hover,
+.widget.content span.expand:focus
+{
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+/* Image CSS */
+/* 
+    Document   : image
+    Created on : 04-Jul-2012, 14:15:32
+    Author     : Dom
+    Description: Image Appproco 
+*/
+
+.widget.image img
+{
+    display:block;
+    margin:0 auto;
+}
+
+.widget.image {
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin:5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin:5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
+
+/* Navigation CSS */
+/*
+    Document   : navigation
+    Created on : December 12, 2012, 3:30:52 PM
+    Author     : Dom
+    Description:
+        Navigation Wolf Horizon 
+*/
+
+.widget.navigation {
+    margin: 0;
+}
+
+.widget.navigation .navigation {
+    width: 100%;
+}
+
+.widget.navigation ul
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none outside none;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    border-top: 1px solid @color-swatch3;
+    border-bottom: 1px solid @color-swatch3;
+}
+
+.widget.navigation ul.align-center li
+{
+    text-align: center;
+    background-image: none;
+}
+
+.widget.navigation ul.align-left
+{
+    text-align: left;
+}
+
+.widget.navigation ul.align-right li
+{
+    text-align: right;
+    background-image: none;   
+}
+
+.widget.navigation ul li 
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid @color-swatch1;
+    background-color: @color-swatch2;
+    background-image: image('/wolfhorizon/images/arrow-nav.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    /* fonts */
+    font-family:@font-swatch6-font-family;
+    font-size:@font-swatch5-font-size;
+    letter-spacing: @font-swatch6-letter-spacing;
+}
+.widget.navigation ul li a
+{
+    display: block;
+    padding: 18px 20px;
+    color: lighten(@color-swatch4,20%);
+    font-weight: @font-swatch6-font-weight;
+    text-decoration: none;
+}
+
+.widget.navigation ul li:hover
+{
+    background-color: darken(@color-swatch2,10%);
+    cursor: pointer;
+}
+
+.widget.navigation ul li:hover a
+{
+}
+
+.navigation ul li:last-child
+{
+    border-right: none;
+}
+
+.navigation.nm-3-tabs ul li:last-child, .navigation.nm-4-tabs ul li:last-child
+{
+    border-bottom: none;
+}
+
+
+/* Twitter CSS */
+/* 
+    Document   : twitter
+    Created on : 04-Jul-2012, 14:15:32
+    Author     : Dom
+    Description: Twitter Wolf Horizon
+*/
+
+
+.widget.twitter {
+}
+
+.widget.twitter a {
+   color: @color-swatch4;
+   font-size:@font-swatch5-font-size;
+   text-decoration: none;
+}
+
+.widget.twitter a:hover {
+    text-decoration: underline;
+}
+
+.widget.twitter ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.widget.twitter ul li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+}
+
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
+    font-weight: bold;
+}
+
+.widget.twitter .twitter-content bk-full-name p {
+   
+}
+
+/* Facebook CSS */
+/* 
+    Document   : facebook
+    Author     : Dom
+    Description: Facebook
+*/
+
+.widget.facebooklike {
+    padding-left: 20px;
+}   
+
+
+
+/* Form CSS */
+/* 
+    Document   : Form
+    Created on : 17-Dec-2012, 14:15:32
+    Author     : Dom
+    Description: Form Wolf Horizon
+*/
+
+.widget.contactform form {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.widget.contactform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@font-swatch4-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.contactform fieldset input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lighten(@color-swatch4,60%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    background-color: lighten(@color-swatch2,50%);
+    background-image: url(assets/images/bg.png);
+    background-repeat: repeat;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-indent: 8px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.widget.contactform fieldset textarea {
+    height: 100px;
+    width: 100%;
+    border: 1px solid lighten(@color-swatch4,60%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    background-color: lighten(@color-swatch2,50%);
+    background-image: url(assets/images/bg.png);
+    background-repeat: repeat;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-indent: 8px;
+    padding-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.widget.contactform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.contactform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.contactform fieldset button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.contactform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.contactform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+
+.widget.contactform fieldset button.btn {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    font-family:@font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    color: @font-swatch7-color;
+    background-color: @font-swatch7-background-color;
+    padding: 8px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+.widget.contactform fieldset button.btn:hover {
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+.widget.contactform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.contactform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.contactform fieldset button.btn.justifyfull
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.contactform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+
+/* COMPANY HEADER */
+
+.widget.companyheader:before,
+.widget.companyheader:after 
+{
+    content: " ";
+    display: table;
+}
+
+.widget.companyheader:after 
+{
+    clear: both;
+}
+
+.widget.companyheader 
+{
+    *zoom: 1;
+}
+
+.widget.companyheader span.logo
+{
+    width:100%;
+    display:block;
+    text-align:center;
+}
+
+.widget.companyheader span.logo-bottom
+{
+    display:none;
+}
+
+.widget.companyheader span.company-name
+{
+    width:100%;
+    display:block;
+    text-align:center;
+}
+

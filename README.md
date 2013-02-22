@@ -1,4 +1,4 @@
 wolfhorizon
 ===========
 
-BaseKi's Wolfhorizon Template
+BaseKit's Wolfhorizon Template

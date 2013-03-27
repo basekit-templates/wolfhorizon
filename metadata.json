@@ -1,8 +1,7 @@
 {
 	"name":"Wolf Horizon",
-	"directory":"wolfhorizon",
-	"thumbnail":"/wolfhorizon/wolfhorizon.jpg",
-	"screenshot":"/wolfhorizon/wolfhorizon.jpg",
+	"thumbnail":"wolfhorizon.jpg",
+	"screenshot":"wolfhorizon.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Earth 4",
 	"defaultFontSwatch":"Raleway"

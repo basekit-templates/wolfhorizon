@@ -399,40 +399,6 @@ hr.line.align-right {
     letter-spacing: @font-swatch6-letter-spacing;
 }
 
-.widget.extendednavigation ul li:hover
-{
-    background-color: darken(@color-swatch2,20%);
-    cursor: pointer;
-    color: @color-swatch2;
-}
-
-.widget.extendednavigation ul li.folder a{
-    background-image: image('/wolfhorizon/images/arrow-down.png');
-    background-position: right center;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.widget.extendednavigation ul li.folder .text 
-{
-    display:inline-block;
-    padding: 18px 0px;
-    color: @color-swatch4;
-}
-
-.widget.extendednavigation ul li.folder ul li .text 
-{
-    padding: 0px;
-}
-
-.widget.extendednavigation ul li span.menu-icon {
-    margin-right: 5px;
-}
-
-.widget.extendednavigation ul.align-right li.folder a {
-    background-position: 20px center;
-}
-
 .widget.navigation ul li a
 {
     display: block;
@@ -702,7 +668,15 @@ hr.line.align-right {
 
 /* Extended Navigation */
 
-.widget.extendednavigation {
+.widget.extendednavigation 
+{
+  overflow: hidden;
+}
+
+header .widget.extendednavigation 
+{
+  float: right;
+  position: relative;
 }
 
 .widget.extendednavigation ul {
@@ -736,6 +710,7 @@ hr.line.align-right {
     background-position: right center;
     background-repeat: no-repeat;
 }
+
 
 .widget.extendednavigation ul.align-right li.folder, .widget.extendednavigation ul.align-right li.folder a {
     background-position: 20px center;

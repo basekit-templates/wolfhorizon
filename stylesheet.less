@@ -708,15 +708,8 @@ hr.line.align-right {
     height: 100%;
 }
 
-
 .widget.extendednavigation ul.align-right li.folder {
     background-position: 20px center;
-}
-
-
-.widget.extendednavigation ul.align-right li
-{
-    background-image: none;
 }
 
 .widget.extendednavigation ul li a
@@ -726,6 +719,10 @@ hr.line.align-right {
     color: lighten(@color-swatch4,20%);
     font-weight: @font-swatch6-font-weight;
     text-decoration: none;
+}
+
+.widget.extendednavigation li ul {
+    display: none;
 }
 
 .widget.extendednavigation ul li:hover ul {
@@ -755,14 +752,9 @@ hr.line.align-right {
     -ms-transition: all .3s ease-in-out;
 }
 
-.widget.extendednavigation.nm-3-tabs ul li {
+.widget.extendednavigation.nm-3-tabs ul li, .widget.extendednavigation.nm-4-tabs ul li {
     background-image: none;
 }
-
-.widget.extendednavigation ul.align-right li.folder {
-    background-position: left center;
-}
-
 
 /* DESKTOP REDIRECT */
 

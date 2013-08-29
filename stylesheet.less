@@ -594,6 +594,42 @@ footer h4 {
     font-weight: bold;
 }
 
+/* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-width: 0;
+}
+
+.widget.image {
+
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin: 5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
 
 /* ===============================
    BUTTON CSS
@@ -909,18 +945,28 @@ hr.line.align-right {
 
 
 .widget.twitter {
-  background-color: lighten(@color-swatch5,27%);
-  padding: 30px;
+  margin: 20px 0;
+}
+
+.widget.twitter p {
+  font-size: 1.5em;
+  line-height: 1.6em;
 }
 
 .widget.twitter a {
-   color: @color-swatch4;
-   font-size:@font-swatch5-font-size;
+   color: @font-swatch5-color;
    text-decoration: none;
+   padding-bottom: 4px;
+}
+
+.widget.twitter span a {
+  border-bottom: 0;
+  font-size: 11px;
+  color: @color-swatch3;
 }
 
 .widget.twitter a:hover {
-    text-decoration: underline;
+
 }
 
 .widget.twitter ul {
@@ -932,6 +978,7 @@ hr.line.align-right {
     border-bottom: none;
     list-style: none;
     font-family: @font-swatch5-font-family;
+    font-size: .6em;
     color: @font-swatch5-color;
     padding-bottom: 30px;
 }
@@ -942,40 +989,21 @@ hr.line.align-right {
 
 .widget.twitter .twitter-profile-pic {
     float: left;
-    margin: 32px 30px 0px;
+    margin-right: 20px;
 }
 
-.widget.twitter .twitter-content {
-  background-color: @color-swatch1;
-  padding: 30px;
-}
-
-.widget.twitter .twitter-content p {
-  font-size: 14px;
-  line-height: 26px;
-  padding-top: 20px;
-}
-
-.widget.twitter .twitter-content span {
-  font-size: 11px;
-}
-
-.widget.twitter .twitter-content span a {
-  font-size: 11px;
-  color: @color-swatch7;
+.widget.twitter .twitter-profile-pic a {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .widget.twitter .twitter-content span.bk-full-name {
-  display: inline-block;
-  font-family: @font-swatch4-font-family;
-  font-size: @font-swatch5-font-size;
-  color: @color-swatch7;
-  border-bottom: 2px solid lighten(@color-swatch5,5%);
-  padding-bottom: 4px;
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
 }
 
-.widget.twitter time.created_at {
-  font-size: 11px;
+.widget.twitter span, .widget.twitter time {
+    font-size: 11px;
 }
 
 /* ===============================

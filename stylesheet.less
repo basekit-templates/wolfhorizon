@@ -525,72 +525,35 @@ footer h4 {
 }
 
 
-/* ===============================
-   CLICK TO CALL WIDGET
-   =============================== */
+/* =======================================
+   CLICK TO CALL
+   ==================================== */
 
-  .widget.clicktocall {
-    padding: 20px 0;
+.widget.clicktocall {
+    padding: 8px 0
 }
 
 .widget.clicktocall a {
-    background-color: @font-swatch7-background-color;
-    background-image: image('/images/ic-call.svg');
-    background-position: 18px 19px;
-    background-repeat: no-repeat;
+    background-image: image('/images/ic-call-desktop.svg');
     background-size: 7px;
-    padding: 20px 30px 20px 45px;
-    margin: 0;
-    border: 0;
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 18px;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
     text-decoration: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .widget.clicktocall a:hover {
-    background-color: @font-swatch7-background-color-hover;
-    background-image: image('/images/ic-call.svg');
-    background-position: 18px 19px;
-    background-repeat: no-repeat;
-    background-size: 7px;
-    padding: 20px 30px 20px 45px;
     cursor: pointer;
 }
 
-
-/* CLICK TO CALL - JUSTIFY */
-
-.widget.clicktocall a.justifyleft
-{
-    text-align: left;
-}
-
-.widget.clicktocall a.justifycenter
-{
-    text-align: center;
-}
-
-.widget.clicktocall a.justifyright
-{
-    text-align: right;
-}
-
-.widget.clicktocall a.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.clicktocall a.italic {
-    font-style: italic;
-}
-
-.widget.clicktocall a.bold {
-    font-weight: bold;
+.widget.clicktocall a:active {
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.1)
 }
 
 /* ===============================

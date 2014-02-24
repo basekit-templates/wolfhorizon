@@ -2,11 +2,10 @@
 
 {% block content %}
 
-<header>
-    <div class="header-bg">
-         <div class="wrapper companyheader clearfix">
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
+<header class="bk-header">
+    <div class="wrapper companyheader">
+        <!-- {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}} -->
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
     </div>
     <nav>
         <div class="wrapper clearfix">
@@ -16,14 +15,14 @@
 </header>
 
 <section>
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"LOREM IPSUM", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum Alam", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
 </section>
 
 <div class="main wrapper clearfix">
     {{zone('main')|raw}}
 </div>  
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">

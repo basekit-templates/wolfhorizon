@@ -131,34 +131,51 @@ header {
             li {
                 display: inline-block;
                 float: none;
+                padding: 0;
+
+                &.selected {
+                    .text {
+                        color: @color-swatch3;
+                    }
+                }
+
+                .text {
+                    padding: 10px 0;
+                    display: block;
+                }
                 // Folder 
                 &.folder {
-                    margin-right: 16px;
                     background-image: image('/images/arrow-down.png');
                     background-position: right center;
                     background-repeat: no-repeat;
                     cursor: pointer;
+                    // padding-right: 16px;
+                    @media @tablet {
+                        padding-right: 0;
+                    }
                     &:after {
                         display: none;
                     }
                     .text {
                         -webkit-font-smoothing: initial;
+                        padding: 10px 16px;
                     }
                 }
                 // Dropdown Menu
                 &:hover {
                     ul {
                         background-color: @color-swatch2;
-                        padding: 30px 0 20px;
+                        padding: 0;
+                        margin: 0;
                         @media @tablet {
-                            padding: 20px 0;
+                            padding: 0;
                             border-top: 1px solid lighten(@color-swatch2,8%);
                         }
                         li {
                             width: 100%;
-                            padding: 4px 22px;
+                            padding: 0 22px;
                             @media @tablet {
-                                padding: 10px 22px;
+                                padding: 0 22px;
                             }
                             a {
                                 padding: 0;

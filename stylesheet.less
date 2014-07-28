@@ -122,6 +122,9 @@ header {
 .widget {
     &.extendednavigation {
         .clearfix;
+        @media @tablet {
+            min-height: 60px;
+        }
         ul {    
             width: 100%;
             margin: 14px 0;
@@ -149,7 +152,6 @@ header {
                     background-position: right center;
                     background-repeat: no-repeat;
                     cursor: pointer;
-                    // padding-right: 16px;
                     @media @tablet {
                         padding-right: 0;
                     }
@@ -197,8 +199,9 @@ header {
             }
         }
         a.pull {
-            top: 33px;
+            top: 0;
             z-index: 9999;
+            margin-top: 33px;
             &:after {
                 background-color: @color-swatch1;
                 box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;

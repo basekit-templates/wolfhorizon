@@ -1,16 +1,23 @@
+/* ===============================
+   IMPORT CSS
+   =============================== */
+   
 @import "@{templateCommon}/basekit-bootstrap.less";
 
 @import "@{templateLocal}/css/common-forms.less";
+@import "@{templateLocal}/css/common-text.less";
 @import "@{templateLocal}/css/widgets-blog.less";
-@import "@{templateLocal}/css/widgets-ecom.less";
 @import "@{templateLocal}/css/widgets-menu.less";
+@import "@{templateLocal}/css/widgets-ecom.less";
 
+// Larget than tablet
 @desktop: ~"only screen and (min-width : 769px)";
+// Larger than mobile
+@mobile-up: ~"only screen and (min-width : 480px)";
+
 
 body {
   background-color: @color-swatch1;
-  margin: 0;
-  padding: 0;
 }
 
 &:hover {
@@ -284,6 +291,9 @@ header {
         .title, .description {
             color: @font-swatch7-color;
         }
+        .title {
+          font-weight: bold;
+        }
     }
     .image-data {
         background: fade(@font-swatch7-background-color, 80%);
@@ -302,9 +312,8 @@ header {
     padding: 0 1.6em;
     padding-left: 50px;
     background-position: 18px center;
-    background-image: image('/images/ic-desktop-call-mob.png');
     background-repeat: no-repeat;
-    @media @desktop {
+    @media @mobile-up {
       padding: 0;
       border: none;
       box-shadow: none;
@@ -317,6 +326,94 @@ header {
       height: auto;
       line-height: @font-swatch5-line-height;
       cursor: default;
+    }
+  }
+}
+
+
+// ======= Widget: Yelp Review
+.widget.yelpreview {
+  // reset
+  ul, li, dl, dt, dd {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.yelpreview li {
+    margin-bottom: 2em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .review-body {
+    .rating {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1em;
+      background: #fff;
+      padding: 4px 3px 0 4px;
+      border-radius: 4px;
+
+      img {
+
+      }
+    }
+    .created {
+      display: inline-block;
+      vertical-align: middle;
+      color: @color-swatch5;
+
+    }
+    .review {
+      display: block;
+      margin-top: 0.5em;
+      background: fade(@color-swatch3, 10%);
+      font-family: @font-swatch5-font-family;
+      font-size: @font-swatch5-font-size;
+      font-weight: @font-swatch5-font-weight;
+      line-height: @font-swatch5-line-height;
+      color: darken(@color-swatch5, 30%);
+      letter-spacing: @font-swatch5-letter-spacing;
+      padding: 24px;
+      position: relative;
+      margin-bottom: 30px;
+
+      @media @mobile {
+        font-size: bkscale(@font-swatch5-font-size, 0.8);
+        line-height: bkscale(@font-swatch5-line-height, 0.8);
+      }
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 24px 24px 0 0;
+        border-color:fade(@color-swatch3, 10%) transparent transparent transparent;
+        position: absolute;
+        top: 100%;
+        left: 24px;
+      }
+    }
+    .reviewer {
+      margin: 24px 0 0.5em 24px;
+      font-size: bkscale(@font-swatch5-font-size, 1);
+      @media @mobile {
+        font-size: bkscale(@font-swatch5-font-size, 0.8);
+      }
+    }
+    .review-link {
+      margin-left: 24px;
+      font-size: bkscale(@font-swatch5-font-size, 0.8);
+      a { 
+        background-color: @color-swatch3;
+        color: @color-swatch1;
+        padding: 0.2em 0.7em;
+        &:hover {
+          text-decoration: none;
+          background-color: @font-swatch7-background-color-hover;
+        }
+      }
     }
   }
 }
@@ -342,6 +439,9 @@ header {
       &:last-child {
         border-bottom: none;
         margin-bottom: 0;
+      }
+      @media @mobile {
+        min-height: 100px;
       }
      
       // footer

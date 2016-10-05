@@ -1,7 +1,7 @@
 {
 	"name":"Wolf Horizon",
 	"thumbnail":"wolfhorizon.png",
-	"screenshot":"wolfhorizon.png",
+	"screenshot":"wolfhorizon-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {

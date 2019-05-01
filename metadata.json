@@ -4,6 +4,7 @@
 	"screenshot":"wolfhorizon-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
+    "versionTenCompatible": 1,
     "tags": {
         "en": ["Professional", "Dark", "Photography", "modern", "landscape", "photos", "clean", "flexible", "multipurpose"],
         "es": ["Profesional", "Oscuro", "fotografico", "moderno", "paisaje", "fotos", "limpio", "flexible", "multiuso"],

@@ -1,0 +1,86 @@
+
+// -----------------------------
+//  Migration - Template Reset
+// -----------------------------
+
+
+#migrated-site {
+    
+    
+    // Removed wrapper and spacing from around sections and widgets
+    .main.wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    
+    // Remove feature spacing
+    .widget.feature {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+// -----------------------------------
+//  Migration - Container & Spacing
+// -----------------------------------
+    
+    
+#migrated-site {
+    
+    
+    // Readd wrapper values to widgets in the zone
+    .empty-zone,
+    #page-zones__main:empty,
+    .canvas,
+    #page-zones__main > .widget:not(.row),
+    .row:not(.widget):not(.row--width-no-padding) .row__container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
+        width: 100%;
+    }
+
+
+    // Adds spacing to a section when a widget follows it
+    #page-zones__main > .row + .widget:not(.row) {
+        margin-top: 15px;
+    }
+
+
+    // Adds spacing to a widget when a section follows it
+    #page-zones__main > .widget:not(.row) + .row {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+
+    // Readds spacing to the first widget in the zone - these values should replicate what was on the .main class in the template
+    .edit #page-zones__main-overlay + .widget:not(.row),
+    #page-zones__main > .widget:not(.row):first-child {
+        margin-top: 50px;
+        
+        @media @tablet {
+            margin-top: 20px;
+        }
+    }
+
+    // Same as above but with different values for the default page
+    .edit .bk-pt-default  #page-zones__main-overlay + .widget:not(.row),
+    .bk-pt-default #page-zones__main > .widget:not(.row):first-child {
+        margin-top: 20px;
+
+        @media @tablet {
+            margin-top: 30px;
+        }
+    }
+     
+     
+    // Readds spacing to the last widget in the zone - these values should replicate what was on the .main class in the template
+    #page-zones__main > .widget:not(.row):last-child {
+        margin-bottom: 20px;
+    }
+}

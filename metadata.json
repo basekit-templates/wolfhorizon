@@ -3,6 +3,7 @@
 	"thumbnail":"wolfhorizon.png",
 	"screenshot":"wolfhorizon-screenshot.jpg",
 	"templateType":"standard",
+    "versionTenCompatible": 1,
     "pageTypes": ["home"],
     "tags": {
         "en": ["Professional", "Dark", "Photography", "modern", "landscape", "photos", "clean", "flexible", "multipurpose"],
